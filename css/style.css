@@ -22,6 +22,10 @@ h1, h2, h3, h4, h5, h6, p {
   margin: 0;
 }
 
+img {
+  display: block;
+}
+
 .container {
   max-width: 1158px;
   padding: 0 15px;
@@ -141,7 +145,7 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 .title-banner {
-  width: 496px;
+  max-width: 496px;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
@@ -155,10 +159,6 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 .order-service-button {
-  display: flex;
-    align-items: center;
-    justify-content: center;
-  
   background-color: #4d5ae5;
   color: #ffffff;
   font-family: var(--font-primary);
@@ -167,20 +167,21 @@ h1, h2, h3, h4, h5, h6, p {
   line-height: 150%;
   letter-spacing: 0.04em;
   text-align: center;
+  cursor: pointer;  
 
-  border-radius: 4px;
+  display: block;
+  padding: 16px 32px;
   border: none;
-    padding: 16px 32px;
-    margin-left: auto;
-    margin-right: auto;
-    width: 169px;
-    height: 56px;
+  border-radius: 4px;
+  min-width: 169px;
+  height: 56px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .order-service-button:hover,
 .order-service-button:focus {
   background-color: #404bbf;
-  cursor: pointer;
 }
 
 /* #endregion main banner */
@@ -190,11 +191,6 @@ h1, h2, h3, h4, h5, h6, p {
 .section-values {
   background-color: #ffffff;
   padding: 120px 0;
-}
-
-.values-list {
-  display: flex;
-  gap: 24px;
 }
 
 .visually-hidden {
@@ -209,6 +205,12 @@ h1, h2, h3, h4, h5, h6, p {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
+.values-list {
+  display: flex;
+  gap: 24px;
+}
+
 .values-item {
   width: calc((100%-72px) /4);
 }
@@ -220,7 +222,7 @@ h1, h2, h3, h4, h5, h6, p {
   letter-spacing: 0.02em;
   color: #2e2f42;
 
-  padding-bottom: 8px;
+  margin-bottom: 8px;
 }
 .text-values {
   font-weight: 400;
@@ -236,17 +238,18 @@ h1, h2, h3, h4, h5, h6, p {
 
 .section-our-team {
   background-color: #f4f4fd;
+  padding: 120px 0 120px;
 }
 
 .item-our-team {
   background-color: #ffffff;
+  border-radius: 0px 0px 4px 4px;
 }
 
 .list-our-team {
   display: flex;
   justify-content: center;
   gap: 24px;
-  padding-bottom: 120px;
 }
 
 .title-our-team {
@@ -258,12 +261,11 @@ h1, h2, h3, h4, h5, h6, p {
   color: #2e2f42;
   text-transform: capitalize;
 
-  padding-top: 120px;
-  padding-bottom: 72px;
+  margin-bottom: 72px;
 }
 
 .our-team-box {
-  padding: 32px 16px;
+ padding: 32px 0 32px;
 }
 
 .title-team-member {
@@ -274,7 +276,7 @@ h1, h2, h3, h4, h5, h6, p {
   color: #2e2f42;
 
   text-align: center;
-  padding-bottom: 8px;
+  margin-bottom: 8px;
 }
 
 .text-member-role {
@@ -292,6 +294,7 @@ h1, h2, h3, h4, h5, h6, p {
 
 .section-our-portfolio {
   background-color: #ffffff;
+  padding: 120px 0;
 }
 
 .title-portfolio {
@@ -303,7 +306,6 @@ h1, h2, h3, h4, h5, h6, p {
   color: #2e2f42;
   text-transform: capitalize;
 
-  margin-top: 120px;
   margin-bottom: 72px;
 }
 
@@ -312,7 +314,6 @@ h1, h2, h3, h4, h5, h6, p {
   flex-wrap: wrap;
   column-gap: 24px;
   row-gap: 48px;
-  padding-bottom: 120px;
 }
 
 .portfolio-item {
@@ -332,7 +333,7 @@ h1, h2, h3, h4, h5, h6, p {
   letter-spacing: 0.02em;
   color: #2e2f42;
 
-  padding-bottom: 8px;
+  margin-bottom: 8px;
 }
 
 .project-category {
@@ -369,7 +370,7 @@ padding: 100px 0;
 
 .logo-footer {
   display: inline-block;
-  padding-bottom: 16px;
+  margin-bottom: 16px;
 }
 
 .footer-text {
